@@ -1,7 +1,7 @@
 # Website we want to scrape is: https://www.verizonwireless.com/smartphones/samsung-galaxy-s7/
 # The documentatio of selenium is here: http://selenium-python.readthedocs.io/index.html
 
-# Please follow the instructions below to 
+# Please follow the instructions below to
 # Step #1
 # Windows users: download the chromedriver from here: https://chromedriver.storage.googleapis.com/index.html?path=2.27/
 # Mac users: Install homebrew: http://brew.sh/
@@ -23,7 +23,7 @@ driver = webdriver.Chrome()
 
 driver.get("https://steamdb.info/graph/")
 
-csv_file = open('users.csv', 'wb')
+csv_file = open('users1.csv', 'wb')
 writer = csv.writer(csv_file)
 writer.writerow(['app_id', 'title', 'current', 'day', 'all_time'])
 # Page index used to keep track of where we are.
@@ -38,7 +38,8 @@ while True:
             title = listing.find_element_by_xpath('.//td[3]').text
             title = title.encode('ascii', 'ignore')
             print title
-            current = listing.find_element_by_xpath('.//td[4]').text
+            current = listing.find_element_by_xpath('.//td[4]').get_attribute("data-sort")
+            print current
             day = listing.find_element_by_xpath('.//td[5]').text
             all_time = listing.find_element_by_xpath('.//td[6]').text
             list_dict["app_id"] = app_id
@@ -47,7 +48,7 @@ while True:
             list_dict["day"] = day
             list_dict["all_time"] = all_time
             writer.writerow(list_dict.values())
-        button = driver.find_element_by_xpath('//*[@id="table-apps"]/tbody/tr[7777]/td')
+        button = driver.find_element_by_xpath('//*[@id="table-apps"]//tr[@class="show-other no-sort"]/td')
         button.click()
     except Exception as e:
 		print e
@@ -99,14 +100,14 @@ while True:
 
 	# try:
 	# 	wait_review = WebDriverWait(driver, 10)
-	# 	reviews = wait_review.until(EC.presence_of_all_elements_located((By.XPATH, 
+	# 	reviews = wait_review.until(EC.presence_of_all_elements_located((By.XPATH,
 	# 								'//ol[@class="bv-content-list bv-content-list-Reviews bv-focusable"]/li')))
 	# 	print index
 	# 	print 'review ok'
 	# 	# reviews = driver.find_elements_by_xpath('//ol[@class="bv-content-list bv-content-list-Reviews bv-focusable"]/li')
 
 	# 	wait_button = WebDriverWait(driver, 10)
-	# 	button = wait_button.until(EC.element_to_be_clickable((By.XPATH, 
+	# 	button = wait_button.until(EC.element_to_be_clickable((By.XPATH,
 	# 								'//div[@class="bv-content-list-container"]//span[@class="bv-content-btn-pages-next"]')))
 	# 	print 'button ok'
 	# 	# button = driver.find_element_by_xpath('//span[@class="bv-content-btn-pages-next"]')
@@ -115,4 +116,3 @@ while True:
 	# 	print e
 	# 	driver.close()
 	# 	break
-	
