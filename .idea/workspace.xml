@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ff7e57f-2692-45e1-a1d1-3e4598ca896a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/steam_data_vis_analysis.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/steam_all/steam_all_Testing.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/steam_all/steam_all_new copy.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/steam_all/steam_full_data.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Steam Presentation.pptx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/~$Steam Presentation.pptx" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Steam_data_exploration-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Steam_data_exploration-checkpoint.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Steam_data_exploration.ipynb" afterPath="$PROJECT_DIR$/Steam_data_exploration.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/player_count/steam_list.py" afterPath="$PROJECT_DIR$/player_count/steam_list.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/steam_all/.idea/workspace.xml" afterPath="$PROJECT_DIR$/steam_all/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/steam_all/steam_all_last_attempt.csv" afterPath="$PROJECT_DIR$/steam_all/steam_all_last_attempt.csv" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,20 +18,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="steam_data_vis_analysis.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/steam_data_vis_analysis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -228,9 +212,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="734" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -262,9 +245,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
